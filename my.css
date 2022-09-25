@@ -1,0 +1,61 @@
+*{
+    align-items: center;
+    margin: 10px;
+    padding: 10;
+
+}
+.box{
+    border: 20px solid gray;
+}
+h1{
+    color: red;
+     
+}
+h2{
+    color: green;
+}
+h1,h2,h3{
+    text-align: center;
+}
+#aman{
+    background-color: aqua;
+}
+img{
+    width: 400px;
+   
+}
+#image{
+    border: 2px solid violet;
+
+}
+.cl1{
+    border: 5px solid red;
+    padding: 8px; 
+    border-radius: 400px;
+    
+
+}
+div h1{
+    background-color: yellow;
+}
+div ~ p{
+    background-color: aquamarine;
+
+
+}
+h1:hover{
+background-color: chartreuse;
+color: black;
+font-weight: bolder;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+p::first-letter{
+    background-color: greenyellow;
+}
+a[target]:visited{
+    color: coral;
+}
+
+a[target]:visited{
+    border: 2px solid black;
+
+}

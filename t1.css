@@ -1,0 +1,93 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100%;
+    width: 330px;
+    position: relative;
+}
+.wrapper .menu-btn{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    height: 45px;
+    width: 45px;
+  z-index: 999;
+  border: 1px solid #333;
+  color: #f2f2f2;
+  background-color: #4a4a4a;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 5px;
+cursor: pointer;
+font-size: 23px;
+}
+#btn:checked ~ .menu-btn i::before{
+   left: 247px;
+}
+
+
+#btn:checked ~ .menu-btn i::before{
+    content: "\f00d";
+}
+
+
+.wrapper #sidebar{
+    position: fixed;
+    height: 100%;
+    width: 270px;
+    background-color: red;
+overflow: hidden;
+left: -270px;
+transition: all 0.10s ease;
+}
+#btn:checked ~ #sidebar {
+    left: 0;
+}
+#sidebar .title{
+    color: yellow;
+    font-size: 25px;
+    font-weight: 600px;
+    line-height: 65px;
+    background-color: #333;
+    text-align: center;
+}
+input[type="checkbox"]{
+    display: none;
+
+}
+
+
+#sidebar .listitems{
+background: #404040;
+height: 100%;
+width: 100%;
+list-style: none;
+
+}
+#sidebar li{
+    padding-left: 40px;
+    line-height: 40px;
+    border-top: 1px solid rgba(255,255,255, 0.1);
+    border-bottom: 1px solid #333;
+    box-shadow: 0 0 10px ;
+    transition: all 03.s ease;
+
+}
+#sidebar li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500px;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+#sidebar .listitems li:hover{
+    box-shadow: 0 0 10px 3px #fff;
+    border-top:1px solid transparent;
+}
